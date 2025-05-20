@@ -1,0 +1,33 @@
++ class Curso
+	- int id_curso
+	- String nombre
+	- String descripcion
+	- int año_escolar
+	
+	+ Curso (nombre, descripcion, año_escolar)
+	+ Curso (id_curso, nombre, descripcion, año_escolar)
+	
+	+ int getId_curso()
+	+ String getNombre()
+	+ String getDescripcion()
+	+ int getAño_escolar()
+	
+	+ void toString()
+
+---------------------------------------------------------------------
++ class CursoDAO
+	- Connection con
+	
+	+ CursoDAO() 
+	
+	+ boolean crearCurso(Curso)
+	+ ArrayList<Curso> listaCursos()
+	+ boolean asignarProfeACurso()
+	+ ArrayList<Curso> listaEstudiantes(id_curso)
+	+ boolean eliminarCurso(id_curso)
+		
+---------------------------------------------------------------------
++ class Constantes
+ + static final String URL
+ + static final String USER
+ + static final String PASSWORD
