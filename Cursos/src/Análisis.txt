@@ -22,8 +22,8 @@
 	
 	+ boolean crearCurso(Curso)
 	+ ArrayList<Curso> listaCursos()
-	+ boolean asignarProfeACurso()
-	+ ArrayList<Curso> listaEstudiantes(id_curso)
+	+ int asignarProfeACurso()
+	+ ArrayList<String> listaEstudiantes(id_curso)
 	+ boolean eliminarCurso(id_curso)
 		
 ---------------------------------------------------------------------
